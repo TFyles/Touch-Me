@@ -9,9 +9,12 @@
 </head>
 <body>
 
-<div data-role="page" id="pageone">
+  <a href="#overlay01" onclick="change_hash('overlay01'); return false; " ></a>
+  <a href="#overlay02" onclick="change_hash('overlay02'); return false; " ></a>
+
+  <div data-role="page" id="overlay01">
   <div data-role="header">
-    <h1>The taphold Event</h1>
+  <h1>The taphold Event</h1>
   </div>
 
   <div data-role="main" class="ui-content">
@@ -28,6 +31,22 @@
     <h1>Footer Text</h1>
   </div>
 </div> 
+
+<div data-role="page" id="overlay02">
+        
+  <div data-role="header">Header</div>
+        
+    <div role="main" class="ui-content">
+    
+      <input type="date" id="textinput" value=""  />
+        
+        <button onClick="submitText()">Submit A</button>
+        <button id="submitButton">Submit B</button>
+
+    </div>
+        
+    <div data-role="footer">Footer</div>
+  </div>
 
 </body>
 </html>
